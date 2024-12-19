@@ -1,0 +1,60 @@
+/* Film-Liste */
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #153C6A; 
+    border-radius: 10px;
+}
+/* einzelne Film-Items */
+.movie-item {
+    background-color: #042142; 
+    border: 2px solid #2475AC; 
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    height: 200px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.movie-item:hover {
+    transform: scale(1.05);
+}
+/* Buttons */
+.sort-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.sort-buttons button {
+    background-color: #153C6A;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff; 
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.sort-buttons button:hover {
+    background-color: #2475AC; 
+    transform: scale(1.05);
+}
+
+.sort-buttons button:active {
+    background-color: #3DE0FC;
+}
